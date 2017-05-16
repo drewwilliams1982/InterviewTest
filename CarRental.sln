@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Bookings", "CarRental.Bookings\CarRental.Bookings.csproj", "{7ABEB2AB-B407-46D3-8BFC-1832A8187DCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRental.Bookings", "CarRental.Bookings\CarRental.Bookings.csproj", "{7ABEB2AB-B407-46D3-8BFC-1832A8187DCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Bookings.Tests", "CarRental.Bookings.Tests\CarRental.Bookings.Tests.csproj", "{D9716B65-0B7F-4007-9860-FB5C17130F86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRental.Bookings.Tests", "CarRental.Bookings.Tests\CarRental.Bookings.Tests.csproj", "{D9716B65-0B7F-4007-9860-FB5C17130F86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
