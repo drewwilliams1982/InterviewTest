@@ -1,13 +1,11 @@
-﻿namespace CarRental.Bookings.Tests
+namespace CarRental.Bookings.Tests
 {
     using System;
     using CarRental.Bookings.Entities;
-    using NUnit.Framework;
-
-    [TestFixture]
+    using Xunit;
     public class BookingServiceTests
     {
-        [Test]
+        [Fact]
         public void when_making_a_car_booking_it_should_calculate_the_daily_rate()
         {
             var repo = new BookingRepository();
@@ -16,10 +14,11 @@
             car.DailyCost = 100;
 
             var booking = service.MakeCarBooking(car, DateTime.Today, 1, 0, "Joe Bloggs");
-            Assert.AreEqual(100, booking.TotalCost);
+            
+            Assert.Equal(100, booking.TotalCost);
         }
 
-        [Test]
+        [Fact]
         public void the_return_date_is_calculated_correctly()
         {
             var repo = new BookingRepository();
@@ -28,13 +27,13 @@
             car.DailyCost = 100;
 
             var booking = service.MakeCarBooking(car, DateTime.Today, 1, 0, "Joe Bloggs");
-            Assert.AreEqual(100, booking.TotalCost);
+            Assert.Equal(100, booking.TotalCost);
         }
 
-        [Test]
+        [Fact]
         public void agreed_discount_is_applied()
         {
-            throw new NotImplementedException();
+            Assert.True(false);
         }
     }
 }
