@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Bookings", "CarRental.Bookings\CarRental.Bookings.csproj", "{7ABEB2AB-B407-46D3-8BFC-1832A8187DCE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Bookings.Tests", "CarRental.Bookings.Tests\CarRental.Bookings.Tests.csproj", "{D9716B65-0B7F-4007-9860-FB5C17130F86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental", "CarRental\CarRental.csproj", "{EED61805-B49F-4D7A-8D28-54D7BFB6E647}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D9716B65-0B7F-4007-9860-FB5C17130F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9716B65-0B7F-4007-9860-FB5C17130F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9716B65-0B7F-4007-9860-FB5C17130F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EED61805-B49F-4D7A-8D28-54D7BFB6E647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED61805-B49F-4D7A-8D28-54D7BFB6E647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED61805-B49F-4D7A-8D28-54D7BFB6E647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED61805-B49F-4D7A-8D28-54D7BFB6E647}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
