@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Bookings", "CarRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Bookings.Tests", "CarRental.Bookings.Tests\CarRental.Bookings.Tests.csproj", "{D9716B65-0B7F-4007-9860-FB5C17130F86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental", "CarRental\CarRental.csproj", "{EED61805-B49F-4D7A-8D28-54D7BFB6E647}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +21,11 @@ Global
 		{D9716B65-0B7F-4007-9860-FB5C17130F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9716B65-0B7F-4007-9860-FB5C17130F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9716B65-0B7F-4007-9860-FB5C17130F86}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EED61805-B49F-4D7A-8D28-54D7BFB6E647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EED61805-B49F-4D7A-8D28-54D7BFB6E647}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EED61805-B49F-4D7A-8D28-54D7BFB6E647}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EED61805-B49F-4D7A-8D28-54D7BFB6E647}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {056BD8AB-1935-4B35-A192-264B85548CE1}
 	EndGlobalSection
 EndGlobal

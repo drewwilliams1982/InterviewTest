@@ -28,7 +28,7 @@
             car.DailyCost = 100;
 
             var booking = service.MakeCarBooking(car, DateTime.Today, 1, 0, "Joe Bloggs");
-            Assert.AreEqual(100, booking.TotalCost);
+            Assert.AreEqual(DateTime.Today.AddDays(1), booking.ReturnDate);
         }
 
         [Test]
