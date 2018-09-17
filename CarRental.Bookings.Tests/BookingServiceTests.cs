@@ -27,7 +27,7 @@ namespace CarRental.Bookings.Tests
             car.DailyCost = 100;
 
             var booking = service.MakeCarBooking(car, DateTime.Today, 1, 0, "Joe Bloggs");
-            Assert.Equal(100, booking.TotalCost);
+            Assert.Equal(DateTime.Today.AddDays(1), booking.ReturnDate);
         }
 
         [Fact]
