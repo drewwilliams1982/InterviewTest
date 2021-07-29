@@ -1,7 +1,9 @@
 namespace CarRental.Bookings.Entities
 {
     using System;
+    using System.Xml.Serialization;
 
+    [Serializable]
     public class Booking
     {
         public int CarId { get; set; }
@@ -10,8 +12,10 @@ namespace CarRental.Bookings.Entities
 
         public float TotalCost { get; set; }
 
+        [XmlElement(DataType = "date")]
         public DateTime RentalDate { get; set; }
 
+        [XmlElement(DataType = "date")]
         public DateTime ReturnDate { get; set; }
     }
 }
