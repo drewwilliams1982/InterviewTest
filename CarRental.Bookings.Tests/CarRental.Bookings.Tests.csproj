@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CarRental.Bookings\CarRental.Bookings.csproj"/>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0"/>
-    <PackageReference Include="xunit" Version="2.2.0"/>
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0"/>
+    <ProjectReference Include="..\CarRental.Bookings\CarRental.Bookings.csproj" />
   </ItemGroup>
 </Project>
