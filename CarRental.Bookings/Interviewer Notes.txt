@@ -1,7 +1,7 @@
 ﻿============
 Introduction
 ============
-Implement Car and Van booking functionality.
+Implement the Car and Van booking functionality. You can find the specifications for the task in CarRental.Bookings.BookingService. 
 
 This code is designed to be bad! Actively highlight anything you don't like. Refactoring is encouraged; as long as I can still make a car or van booking through the BookingService.
 
