@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections;
+
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
@@ -43,6 +44,7 @@
                     // Assert
                     TestContext.WriteLine($"{clashDetectionTestCaseData.TestDescription}{Environment.NewLine}");
                     TestContext.WriteLine(clashDetectionTestCaseData.ForTestContext());
+
                     Assert.Throws<Exception>(() => bookingService.MakeCarBooking(clashDetectionTestCaseData.Car, clashDetectionTestCaseData.StartDate, clashDetectionTestCaseData.Duration, clashDetectionTestCaseData.Discount, clashDetectionTestCaseData.Name));
                 }
 
@@ -57,6 +59,7 @@
                     // Assert
                     TestContext.WriteLine($"{clashDetectionTestCaseData.TestDescription}{Environment.NewLine}");
                     TestContext.WriteLine(clashDetectionTestCaseData.ForTestContext());
+
                     var findMyBooking = clashDetectionTestCaseData.ExistingBookings.GetCarBookings().FirstOrDefault(x => x.CarId == clashDetectionTestCaseData.Car.Id && x.Name == clashDetectionTestCaseData.Name && x.RentalDate == clashDetectionTestCaseData.StartDate);
                     Assert.IsNotNull(findMyBooking);
                 }
@@ -86,6 +89,7 @@
                         var existingSmallCarBookingEndsTwoDaysAgo = new Booking() { CarId = _smallCar.Id, Name = "Small for 1 day from 2 days ago", RentalDate = dateTimeTwoDaysAgo, ReturnDate = dateTimeToday.Date.AddDays(-1) };
                         var existingSmallCarBookingStartsInTwoDays = new Booking() { CarId = _smallCar.Id, Name = "Small for 1 day in 2 days time", RentalDate = dateTimeTwoDaysTime, ReturnDate = dateTimeToday.Date.AddDays(3) };
                         var testCase3 = new BookingServiceClashDetectionTestCaseData(testDescription, _mediumCar, 0, 1, "Medium Car for 1 day", dateTimeToday, existingSmallCarBookingForToday, existingSmallCarBookingEndsTwoDaysAgo, existingSmallCarBookingStartsInTwoDays);
+
                         yield return new TestCaseData(testCase3);
                     }
                 }
@@ -99,6 +103,7 @@
                         var dateTimeTomorrow = dateTimeToday.AddDays(1);
                         var dateTimeTwoDaysAgo = dateTimeToday.AddDays(-2);
                         var dateTimeTwoDaysTime = dateTimeToday.AddDays(2);
+
                         string testDescription;
 
                         testDescription = $"Existing Booking for the same Car.{Environment.NewLine}e.g. Requested from 15Jul to 16Jul, but Booking exists for 15Jul to 16Jul.";
@@ -129,6 +134,7 @@
                         testDescription = $"Existing Booking for the same Car is currently with a customer.{Environment.NewLine}e.g. Requested from 15Jul to 16Jul, but Booking exists for 14Jul to 17Jul.";
                         var existingMediumCarBookingForThreeDaysFromYesterday = new Booking() { CarId = _mediumCar.Id, Name = "Medium for 3 days from yesterday", RentalDate = dateTimeYesterday, ReturnDate = dateTimeTwoDaysTime };
                         var testCase6 = new BookingServiceClashDetectionTestCaseData(testDescription, _mediumCar, 0, 1, "Medium Car for 1 day", dateTimeToday, existingMediumCarBookingForThreeDaysFromYesterday);
+
                         yield return new TestCaseData(testCase6);
                     }
                 }
@@ -143,6 +149,7 @@
                     public BookingServiceClashDetectionTestCaseData(string testDescription, Car car, float discount, int duration, string name, DateTime startDate, params Booking[] existingCarBookings)
                     {
                         TestDescription = testDescription;
+
                         Car = car;
                         Discount = discount;
                         Duration = duration;
@@ -158,6 +165,7 @@
                             }
                         }                        
                     }
+
 
                     [XmlIgnore]
                     public string TestDescription { get; set; }
@@ -194,6 +202,7 @@
                             return textWriter.ToString();
                         }
                     }
+
                 }
             }
 
