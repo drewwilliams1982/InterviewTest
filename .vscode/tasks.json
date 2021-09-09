@@ -1,17 +1,22 @@
 {
 	// See https://go.microsoft.com/fwlink/?LinkId=733558
 	// for the documentation about the tasks.json format
-	"version": "0.1.0",
+	"version": "2.0.0",
 	"command": "dotnet",
 	"args": [],
 	"tasks": [
 		{
-			"taskName": "build",
+			"label": "build",
+			"command": "dotnet",
 			"args": [
-				"${workspaceRoot}/CarRental/CarRental.csproj"
+				"build",
+				"${workspaceRoot}/CarRental.Bookings/CarRental.Bookings.csproj"
 			],
-			"isBuildCommand": true,
-			"problemMatcher": "$msCompile"
+			"problemMatcher": "$msCompile",
+			"group": {
+				"_id": "build",
+				"isDefault": false
+			}
 		}
 	]
 }
