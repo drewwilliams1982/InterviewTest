@@ -3,6 +3,9 @@
     using System.Collections.Generic;
     using CarRental.Bookings.Entities;
 
+    /**
+    * Do not change this file. For completeness only.
+    */
     public class BookingRepository
     {
         private List<Booking> _cars = new List<Booking>();

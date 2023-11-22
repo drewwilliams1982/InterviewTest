@@ -16,7 +16,7 @@
          * Book a car from a [start] date for a given number of days [duration].
          * 
          * A specific car can only be booked if it isn't already booked out. After each car booking, 
-         * an extra day is required for valeting and can't be booked out on this day.
+         * an extra day is required for cleaning and can't be booked out on this day.
          * 
          * The [TotalCost] of a car booking is the cars [DailyCost] multiplied by the number of days. The
          * agreed discount is then applied onto final value.
@@ -27,9 +27,9 @@
         {
             var booking = new Booking();
             booking.CarId = car.Id;
-            booking.RentalDate = start;
+            booking.StartDate = start;
             booking.ReturnDate = start.AddDays(duration);
-            booking.TotalCost = car.DailyCost * duration;
+            booking.TotalCost = 0; //todo
             booking.Name = name;
 
             // todo:: check for clashes
@@ -50,11 +50,5 @@
          * 
          * If the booking can't be made, raise an exception highlighting the specific error.
          */
-        public Booking MakeVanBooking(Van van, DateTime start, int duration, float discount, string name)
-        {
-            // todo:: make booking for van
-            
-            return null;
-        }
     }
 }

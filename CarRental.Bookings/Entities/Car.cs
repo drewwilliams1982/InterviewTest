@@ -14,4 +14,9 @@ namespace CarRental.Bookings.Entities
 
         public CarStyle Style { get; set; }
     }
+
+    public enum CarStyle
+    {
+        HatchBack, Sports, SUV, Saloon
+    }
 }
