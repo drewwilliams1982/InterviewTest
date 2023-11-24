@@ -14,4 +14,9 @@
 
         public WheelBase WheelBase { get; set; }
     }
+
+    public enum WheelBase
+    {
+        Long, Short
+    }
 }

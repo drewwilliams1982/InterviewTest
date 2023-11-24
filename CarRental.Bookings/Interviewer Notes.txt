@@ -1,19 +1,11 @@
 ﻿============
 Introduction
 ============
-Implement the Car and Van booking functionality. You can find the specifications for the task in CarRental.Bookings.BookingService. 
+Implement the Car booking functionality. You can find the specifications for the task in CarRental.Bookings.BookingService. 
 
-This code is designed to be bad! Actively highlight anything you don't like. Refactoring is encouraged; as long as I can still make a car or van booking through the BookingService.
-
-Unit tests are desirable. Feel free to install another unit test runner and or any other packages as required.
+This code is designed to be bad! Actively highlight anything you don't like and discuss anything you would refactor.
 
 Feel free to ask questions to the interviewers and treat us a pair programming buddies.
 
 Feel free to use the Internet to look things up.
 
-===============
-Upon completion
-===============
-	1. discuss how you would go about implementing another booking type, say motorbikes.
-	2. discuss how you would go about implementing a seasonal discount function
-		e.g. In November, all Saloon and SUV Car get a 2-4-1 daily rate.

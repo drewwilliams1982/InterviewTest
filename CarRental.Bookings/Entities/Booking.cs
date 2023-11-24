@@ -13,7 +13,7 @@ namespace CarRental.Bookings.Entities
         public float TotalCost { get; set; }
 
         [XmlElement(DataType = "date")]
-        public DateTime RentalDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         [XmlElement(DataType = "date")]
         public DateTime ReturnDate { get; set; }
